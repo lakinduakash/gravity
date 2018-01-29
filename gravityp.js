@@ -520,8 +520,6 @@ Particle.prototype = (function(o) {
         }
         bufferCtx.fill();
         bufferCtx.restore();
-
-        // バッファをキャンバスに描画
         context.drawImage(bufferCvs, 0, 0);
 
         requestAnimationFrame(loop);
